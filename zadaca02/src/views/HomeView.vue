@@ -7,16 +7,23 @@
 
 export default {
   name: 'HomeView',
+  data: function() {
+    return {
+      ime: "Loris",
+      prezime: "Lukić",
+      commits: [],
+    };
+  },
   async mounted() {
     let rezultat = await fetch("https://api.github.com/repos/vuejs/vue/commits");
     
     let podaci = await rezultat.json();
 
-    let id = prompt("Što hoćeš?");
-
     for (let item of podaci) {
-      console.log(item[id]);
+      console.log(item[item.sha]);
     }
+    alert(this.ime)
+    this.commits = podaci;
   },
 };
 </script>
