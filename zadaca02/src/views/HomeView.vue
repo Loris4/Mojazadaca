@@ -1,5 +1,12 @@
 <template>
-  <div class="home">Prazna</div>
+  <div class="home">
+    Ja sam varijabla ali sam pretvoren u string
+    <br />
+    <br />
+    <br />
+    <br />
+    {{commits[0].sha}}
+  </div>
 </template>
 
 <script>
