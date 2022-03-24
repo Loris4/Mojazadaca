@@ -16,5 +16,8 @@ export default {
       ime: "OK"
     };
   },
+  mounted() {
+
+  },
   name: "AboutPage",
 }

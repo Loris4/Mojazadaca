@@ -8,14 +8,16 @@
 
     <ul>
       <li v-for="item in commits" v-bind:key="item.sha">
-        Commit <router-link :to="'/commit/'" + item.sha>{{ item.sha }}</router-link>
+        Commit 
+        <router-link :to="'/commit/' + item.sha">{{ item.sha }}</router-link>
+        <router-link :to="{name: 'about', params: {sha: item.sha}}">{{ item.sha }}</router-link>
+          item.sha
       </li>
     </ul>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 
 export default {
   name: 'HomeView',
