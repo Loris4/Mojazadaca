@@ -12,8 +12,10 @@ export default {
     
     let podaci = await rezultat.json();
 
+    let id = prompt("Što hoćeš?");
+
     for (let item of podaci) {
-      console.log(item);
+      console.log(item[id]);
     }
   },
 };
