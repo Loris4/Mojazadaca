@@ -11,7 +11,7 @@ const routes = [
     component: HomeView
   },
   {
-    path: "/commit/:sha",
+    path: "/about",
     name: "about",
     component: () => 
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),

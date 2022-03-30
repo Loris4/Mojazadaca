@@ -16,8 +16,10 @@ export default {
       ime: "OK"
     };
   },
-  mounted() {
+mounted () {
 
-  },
+},
   name: "AboutPage",
-}
+};
+</script>
+<style></style>
